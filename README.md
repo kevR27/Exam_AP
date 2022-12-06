@@ -7,15 +7,15 @@ The project contains ***four .py*** file to which each contains certain function
 1. ***main.py*** is a program which is able to open our dataset and print given function which is asked by the user; the file is linked with the *operation.py*
 2. ***reading.py*** is a program in which contains libraries like **pandas** (responsible for interpreting our dataset and trensforming it into a generic tabular data) and **gzip** (responsible for unzipping the zipped GFF3 file) which are responsible on reading the GFF3 File and transforming it into a readable dataset for the user. This program contains a class named ***DataSetReader*** which contains the function *getFile* which is used to open and interpret our dataset (GFF3 File)
 3. ***operations.py*** consists a class **DataSet** and its asscociated method which are the operations. operations can only be executed whenever they are active; these attributes are used for:
-  * returns our datsaet about the Human genome data
-  * returns basic information of the human genome like name, source, sequence id, type; so information about the human genome which can be obtained by the user
-  * returns all unique sequence ids found in the dataset; these sequence ID is different in every sequences and regions of the Human Genome
-  * returns a value of the total value of features we can find in the dataset, Hence, every features we can see in different sources that provided the DNA sequences and Annotation of the Human Genome
-  * returns a value of all the entries for each type of operation which can be found in every sources (databases)
-  * returns a new dataset of the chromosome information from the GRCh38 source from ur old dataset
-  * calculates the unassembled sequences which is present  on the dataset (it is done through getting the ratio between the supercontigs which are said to have gaps on the genome sequences and the whole human genome)
-  * gets separate new dataset for the other sources we have (ensembl, havana, ensembl_havana)
-  * gets the gene name which is seen on the said remaining sources and they are usually seen on the attribute column
+     * returns our datsaet about the Human genome data
+     * returns basic information of the human genome like name, source, sequence id, type; so information about the human genome which can be obtained by the user
+     * returns all unique sequence ids found in the dataset; these sequence ID is different in every sequences and regions of the Human Genome
+     * returns a value of the total value of features we can find in the dataset, Hence, every features we can see in different sources that provided the DNA sequences and Annotation of the Human Genome
+     * returns a value of all the entries for each type of operation which can be found in every sources (databases)
+     * returns a new dataset of the chromosome information from the GRCh38 source from ur old dataset
+     * calculates the unassembled sequences which is present  on the dataset (it is done through getting the ratio between the supercontigs which are said to have gaps on the genome sequences and the whole human genome)
+     * gets separate new dataset for the other sources we have (ensembl, havana, ensembl_havana)
+     * gets the gene name which is seen on the said remaining sources and they are usually seen on the attribute column
 4. ***Registry.py*** consists in a program which implements the Web-based user interface (UI).
 
 ## CRC Cards

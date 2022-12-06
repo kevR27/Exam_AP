@@ -31,8 +31,13 @@ It is a folder which contains <ins>templates</ins> used to implement the file **
 
 ## Data
 You can see it uploaded in the repository; otherwise it can be downloaded through this link ***https://www.dropbox.com/s/11yzbl0dpyanvyi/Homo_sapiens.GRCh38.85.gff3.gz?dl=0***
+
+
 This data is the human genome sequence and annotation which is in a General Feature Format (GFF3) File Format, this format is the common format used for analyzing Genomic data
-***https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md*** this link gives a thorough explanation of the contents of the GFF3 File
+
+***https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md*** 
+
+this link gives a thorough explanation of the contents of the GFF3 File
 
 ## Libraries
 Several libraries have been used:
@@ -45,6 +50,8 @@ from flask import Flask, render_template, request
 To run the program, make sure to have them installed the following Libraries. 
 - Installing *[Flask](https://phoenixnap.com/kb/install-flask)*
 - Installing *[pandas](https://pandas.pydata.org/docs/getting_started/install.html)*
+
+
 Installation usually is done using the **pip install** command
 
 ## HTML page

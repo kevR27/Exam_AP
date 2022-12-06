@@ -58,5 +58,5 @@ Installation usually is done using the **pip install** command
 Once we executed all of the ***.py*** files especially when we run the *web.py*, a link will be provided in the terminal which can be used to access the Homepage of the web interface.
 
 ## Authors
-***Coviello*** Lilliana, ***Knyazhitskiy*** Dmitriy, ***Mohebbi*** Pegah, ***Ramos***, Kevin Karl 
+*Coviello Lilliana*, *Knyazhitskiy Dmitriy*, *Mohebbi Pegah*, *Ramos Kevin Karl* 
 

@@ -58,7 +58,7 @@ To run the program, make sure to have them installed the following Libraries.
 
 Installation usually is done using the **pip install** command
 
-To run the program, using terminal or powershell, you first need to run first operation.py, then run Registry.py, then finally we run the app.py which will then give you a link in which contains all the functions of our program
+To run the program, using terminal or powershell, you first need to run first ***operation.py***, then run ***Registry.py***, then finally we run the ***app.py*** which will then give you a link in which contains all the functions of our program
 
 ## HTML page
 Once we executed all of the ***.py*** files especially when we run the *app.py*, a link will be provided in the terminal which can be used to access the Homepage of the web interface.

@@ -32,7 +32,7 @@ We have provided a folder with an UML diagram explaining the connections between
 ## Templates
 It is a folder which contains <ins>templates</ins> used to implement the file ***app.py*** to create an HTML web page. (User Interface)
 
-##Static
+## Static
 It is a folder that contains accessory used on the implementation of the HTML web page (User Interface)
 
 ## Data

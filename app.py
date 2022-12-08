@@ -4,8 +4,8 @@ from Registry import *
 
 webapp = Flask('my_webapp')
 
-data = DataSet('Homo_sapiens.GRCh38.85.gff3.gz',
-               ['link_number_feature', 'get_unique_types'])
+#here we provide list of inactive operations
+data = DataSet('Homo_sapiens.GRCh38.85.gff3.gz', ['get_unique_types'])
 reg = Registry(data)
 
 

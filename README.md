@@ -49,12 +49,13 @@ Several libraries have been used:
 ```python
 import pandas as pd
 import gzip 
-from flask import Flask, render_template, request 
+from flask import Flask, render_template 
 ```
 ## How can you run the Program?
 To run the program, make sure to have them installed the following Libraries. 
 - Installing *[Flask](https://phoenixnap.com/kb/install-flask)*
 - Installing *[pandas](https://pandas.pydata.org/docs/getting_started/install.html)*
+- Installing *[gzip](https://docs.python.org/3/library/gzip.html)*
 
 Installation usually is done using the **pip install** command
 

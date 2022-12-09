@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+	background-repeat: no-repeat;
+  	background-size: cover;
+	background-color: rgb(140,140,149,0.7);
+	background-blend-mode: lighten;
+	background-image: url({{url_for('static', filename='bg.jpeg') }}); 
+}
+</style>
+<head>
+    <style>
+                        .under {text-decoration: underline #151415;}
+                        .over {text-decoration: wavy overline lime;}
+                        .line {text-decoration: line-through;}
+                        .plain {text-decoration: none;}
+                        .underover {text-decoration: dashed underline overline;}
+                        .thick {text-decoration: solid underline purple 4px;}
+                        .blink {text-decoration: blink;}
+                        .button {
+                            display: inline-block;
+                            padding: 4px 7px;
+                            font-size: 14px;
+                            cursor: pointer;
+                            text-align: center;
+                            text-decoration: none;
+                            outline: none;
+                            color: #fff;
+                            background-color: #0000ff;
+                            border: none;
+                            border-radius: 5px;
+                            box-shadow: 0 5px #999;
+                            }
+                        .button:hover {background-color: #bebebe}
+                        .button:active {
+                            background-color: #6a5acd;
+                            box-shadow: 0 5px #a0a0a0;
+                            transform: translateY(4px);
+
+
+    </style>
+</head>
+<body>
+<center><font face="Times New Roman" size="10" class='under' style="color:#0033cc;">
+    <b><h style="background: Gray;">Advanced Programming S.Y. 2022-2023</b></h>
+</font></center>
+</br>
+
+<justify><font face="Times New Roman" size="4" style="color:#000000;">
+   <em><p style="background: LightGray;">In this project, you can further understand the contents of the human genomic data which is in a GFF3 file format;
+    that is a default format when we are studying a genomic data from any species (especially the human). In this page
+    you can see different buttons which corresponds to different functions. These function can bring you to a specific
+    information you're interested in knowing regarding the human genome.</em></p>
+</font></justify>
+<justify><font face="Times New Roman" size="4" style="color:#000000;">
+   <em><p style="background: LightGray;"> You can see below a list of active operations which will bring you to a new page which contains the infromation that the operation is describing</em></p>
+</font></justify>
+<font class="under" face="Times New Roman" size="4" style="color:#000000;">
+    <b>Choose a command of your choice:</b>
+</font>
+<ol type="1">
+    <li><font face="Times New Roman" size="3" class="first_page"><b>Get Basic information of each column from the
+        dataset</font></li></b>
+    </br>
+    <form method="get" action="/GBI">
+        <button class="button" type="submit" class="first_page">Info</button>
+    </form>
+    <br></br>
+    <li><font face="Times New Roman" size="3" class="second_page"><b>Get a list of all unique sequence IDs which can be
+        found on the dataset</font></li></b>
+    </br>
+    <form method="get" action="/USI">
+        <button class="button" type="submit" class="second_page">SeqID</button>
+    </form>
+    <br></br>
+    <li><font face="Times New Roman" size="3" class="third_page"><b>Obtain a list of all the unique types of the human
+        genome</font></li></b>
+    </br>
+    <form method="get" action="/UT">
+        <button class="button" type="submit" class="third_page">Types</button>
+    </form>
+    <br></br>
+    <li><font class="fourthuser_page"><b>Count the number of features of the same source</font></li></b>
+    </br>
+    <form method="get" action="/NFS">
+        <button class="button" type="submit" class="fourthuser_page">No. of Features</button>
+    </form>
+    <br></br>
+    <li><font face="Times New Roman" size="3" class="fifth_page"><b>Count the number of entries for each type of
+        operations</font></li></b>
+    </br>
+    <form method="get" action="/NE">
+        <button class="button" type="submit" class="fifth_page">No. of Entries</button>
+    </form>
+    <br></br>
+    <li><font class="sixthuser_page"><b>Obtain new dataset containing information of entire Chromosome 	(GRCh38)</font></li></b>
+    </br>
+    <form method="get" action="/NewData">
+        <button class="button" type="submit" class="sixthuser_page">New Dataset</button>
+    </form>
+    <br></br>
+    <li><font face="Times New Roman" size="3" class="seventh_page"><b>Calculating unassembled sequences from the
+        GRCh38</font></li></b>
+    </br>
+    <form method="get" action="/CalcUS">
+        <button class="button" type="submit" class="seventh_page">Value of Supercontigs</button>
+    </form>
+    <br></br>
+    <li><font class="eighthuser_page"><b>Provides new dataset from ther source</font></li></b>
+    </br>
+    <form method="get" action="/NewDataother">
+        <button class="button" type="submit" class="eighthuser_page">Other Sources</button>
+    </form>
+    <br></br>
+    <li><font face="Times New Romans" size="3" class="ninthuser_page"><b>Counts the number of entries for each type of
+        operation of the dataset containing from source</font></li></b>
+    </br>
+    <form method="get" action="CountON">
+        <button class="button" type="submit" class="ninthuser_page">Entries for each source</button>
+    </form>
+    <br></br>
+    <li><font face="Times New Roman" size="3" class="eigth_page"><b>Returns Gene names from the dataset</b></font></li>
+    </br>
+    <form method="get" action="/Gene">
+        <button class="button" type="submit" class="eigth_page">Genes</button>
+    </form>
+    <br></br>
+
+</body>
+</html>

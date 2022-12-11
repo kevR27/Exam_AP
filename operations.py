@@ -110,7 +110,6 @@ class DataSet(DataSetReader):
     # returning the gene names from the dataset containing containing only entries from source ensembl ,
     # havana and ensembl_havana.
     # slow due to iteration over the rows
-    # Q: maybe gene name is something else? is not Name?
     @_inactive
     def get_gene_names(self):
         selected = self.get_selected_entries().attribute

@@ -1,4 +1,4 @@
-class Registry:  # take a Dataset object, kind of a wrapper around it, can go without this class, but let's keep it
+class Registry:  # take a Dataset object, kind of a wrapper around it, can go without this class
     # because why not
     __operations = [
         "Get Basic information of each column",

@@ -26,8 +26,8 @@ We provided a folder which contain the Class Responsibility Collaboration Cards 
 
 ## UML Diagrams
 We have provided a folder with an UML diagram explaining the connections between the classes built which is important for the design of our program:
-- "".jpg_ is an image representing the UML diagram created with **Visual Paradigm**.
-- _UMLproject_final.vpp_ is the equivalent of "".jpg_ but in format _.vpp_.
+- "Class Diagram.png" is an image representing the UML diagram created with **Visual Paradigm**.
+- "UML diagram.vpp" is the equivalent of "".jpg_ but in format _.vpp_.
 
 ## Templates
 It is a folder which contains <ins>templates</ins> used to implement the file ***app.py*** to create an HTML web page. (User Interface)

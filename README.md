@@ -16,9 +16,9 @@ The project contains three ***.py*** file to which each contains certain functio
      * gets separate new dataset for the other sources we have (ensembl, havana, ensembl_havana)
      * gets the gene name which is seen on the said remaining sources and they are usually seen on the attribute column
      
-2. ***Registry.py*** is a program which is able to open our dataset and print given function which is asked by the user; the file is linked with the *operation.py*; this file is necessary for the implement web-based user interface
+2. ***Registry.py*** is a program which is able to print given function which is asked by the user; the file is linked with the *app.py*; this file is necessary for the implement web-based user interface
 
-3. ***app.py*** consists in a program which implements the Web-based user interface (UI). in order for it to function it needs the python modules and libraries like Flask, operations, and Registry
+3. ***app.py*** consists in a program whichis able to  able to open our dataset and it implements the Web-based user interface (UI). in order for it to function it needs the python modules and libraries like Flask, operations, and Registry
 
 
 ## CRC Cards
@@ -30,7 +30,7 @@ We have provided a folder with an UML diagram explaining the connections between
 - "Class Diagram.vpp" is the equivalent of .png of the UML diagram of all the classes but in _.vpp_ format.
 
 ## Templates
-It is a folder which contains <ins>templates</ins> used to implement the file ***app.py*** to create an HTML web page. (User Interface)
+It is a folder which contains templates that are used to implement the file ***app.py*** to create an HTML web page. (User Interface)
 
 ## Static
 It is a folder that contains accessory used on the implementation of the HTML web page (User Interface)

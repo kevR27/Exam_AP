@@ -50,55 +50,55 @@ Furthermore, it contains several *@app_route* decorators which intend to map the
 
 It will create eleven pages, each pages contain a 'back' button which brings the user on the homepage:
 
-* /:
+-  /:
 the page shows the homepage of our web interface to which it gives the user a short description of the project and also shows a list of the possible active and inactive operations that is implemented on the web page; through this the user can choose any operations that are listed on the page.
 
-*/GBI:
+- /GBI:
 the page shows us the execution of the first operation which is the get_basic_info(), that returns the column of the metadata
 
-*/USI: 
+- /USI: 
 the page shows us the execution of the second operation which is the get_unique_ids() that returns all the unique sequence id founf in human genome
 
-*/UT:
+- /UT:
 the page shows us the execution of the third operation which is the get_unique_types(). however we have set this operation inactive, thus it returns into a message "operation is inactive" instead of all the unique types inside the dataframe
 
-*/NFS:
+- /NFS:
 the page shows us the execution of the fourth operation which is the get_number_of_features() that returns value of the features found in the GFF3 File
 
-*/NE:
+- /NE:
 the page shows us the execution of the fifth operation which is the get_number_of_entries() that returns value of all entries of each type found in the GFF3 File
 
-*/NewData:
+- /NewData:
 the page shows us the execution of the sixth operation which is the get_entire_chromosome_info() that returns all the dataset of the source GRCh38
 
-*/CalcUS:
+- /CalcUS:
 the page shows us the result of the execution of the seventh operations which is the calculate_fraction_of_unassembled_seq(), that returns as a value of the unassembled region of the human genome
 
-*/NewDataother:
+- /NewDataother:
 the page shows us the execution of the eighth operation which is the get_selected_entries() that returns all the dataset of the sources ensembl, havana, ensembl_havana
 
-*/CountON:
-the page shows us the execution of the ninth operation which is the calculate_number_of_specific_entries_for_each_operation() that returns all the values of types found in each entries of the other sources
+- /CountON:
+the page shows us the execution of the ninth operation which is the calculate_number_of_specific_entries_for_each_operation()that returns all the values of types found in each entries of the other sources
 
-*/Gene:
+- /Gene:
 the page shows us the execution of the tenth operation which is the get_gene_names(), that returns all the gene names found on the three sources
 
 In order for the file to work properly we use a functions from Flask which are **render_template** which is able to generate the template we have provided thus HTML and this allows us on implementing our web application using python; and **request** which is a function that allows you to send HTTP requests using Python. The HTTP request returns a Response Object with all the response data, so in our case, our object is "info" which is able to return a response base form the operations we did (found on both the Registry.py and operations.py)
  
 
-## Templates
+### Templates
 
-The folder contains eleven HTML files that display the output that was created through the class and its operations;every HTML files contain:
-- Text-decoration shorthand CSS properties: set the appearance of decorative lines on text (head part)
-- Title
-- Body - contains short description of the operations found in every page, in the hompage.html it is quite different because we have a list of all the active and inactive function while for the rest of the html file the user can see the output with its corresponding description
-- Button - except for the homepage.html, all the html files have the button which is linked with the homepage, thus whenever the user wants to go back and perform other operations they can just click it and returns the user to the original page
+The folder contains eleven HTML files that displays the output that was cretaed through the class and its operations;every HTML files contain:
+- **Text-decoration shorthand CSS properties**: set the appearance of decorative lines on text (head part)
+- **Title**
+- **Body** - contains short description of the operations found in every page, in the hompage.html it is quite different because we have a list of all the active and inactive function while for the rest of the html file the user can see the output with its corresponding description
+- **Button** - except for the homepage.html, all the html files have the button which is linked with the homepage, thus whenever the user wants to go back and perform other operations they can just click it and returns the user to the original page
 
-## Efficiency of the program
+### Efficiency of the program
 
 The time execution of all the functions in our classes are low due to its reliability to pandas thus time complexity of the program itself is low except for the function get_gene_names() because gene names are stored inside the 'attribute' column which returns a very long description, hence data manipulation becomes very slow as we iterate the function in every rows of the dataset thus having a higher time complexity compare to other functions; to avoid this problem we set a display for the first 10000 rows of our dataset otherwise it will take time to obtain the result.
 
-## CRC cards and UML description
-CRC cards and UML diagram is used in this project to know how our class and methods should be 
+### CRC cards and UML description
+CRC cards are used during software analysis  because it let us organize our class. In such way we describe the role of each class (seen on the crc cards) and the corresponding attributes that the class contain; hence base from the project sepcifiaction we created the classes with their respected attributes; With CRC Cards, we can still perform some 
 
-
+We use the UML diagram to design our software, and this diagram is made using the CRC cards that we created earlier.

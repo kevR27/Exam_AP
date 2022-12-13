@@ -26,7 +26,7 @@ We provided a folder which contain the Class Responsibility Collaboration Cards 
 
 ## UML Diagrams
 We have provided a folder with an UML diagram explaining the connections between the classes built which is important for the design of our program:
-- "Class Diagram.png" is an image representing the UML diagram created with **Visual Paradigm**.
+- "classdiagram.png" is an image representing the UML diagram created with **Visual Paradigm**.
 - "Class Diagram.vpp" is the equivalent of .png of the UML diagram of all the classes but in _.vpp_ format.
 
 ## Templates

@@ -32,15 +32,15 @@ Here there's a list of the functions contained in the dataset class, which will 
 
 •	get_number_of_entries() - returns a value of each type of operation, which represents the number that a given segment appears in the dataframe 
 
-•	get_entire_chromosome_info() - returns a new dataset which contains all the information of the chromosome (ex. we use the GRCh38 to extract information regarding the chromosome itself)
+•	get_entire_chromosome_info() - returns a new dataset which contains information on the entire chromosome; this is possible considering only a precise source, that is GRCh38
 
 •	calculate_fraction_of_unassembled_seq() - calculates the unassembled seq inside the GRCh38 and  this is done through the ratio of supercontigs and the whole chromosome itself then returns the value of this ratio
 
-•	get_selected_entries() - the function returns a new dataset from selected source like, ensemble, Havana, ensembl_havana; in fact we can see it as a list
+•	get_selected_entries() - the function returns a new dataframe from selected source ensembl, Havana, ensembl_havana; we can see it as a list 
 
-•calculate_number_of_specific_entries_for_each_operation() - the function returns a dictionary to which contains all the number of specific entries that can be found in each operations (database)
+•calculate_number_of_specific_entries_for_each_operation() - the function returns a dictionary which contains the exact number that each type operator appears in the dataframe (example: 'exon:1180596')
 
-•	get_gene_names() - it returns a list of gene names containing from ensemble, havana, and ensemble_havana 
+•	get_gene_names() - it returns a list of gene names contained in selected sources, which are ensembl, havana, and ensembl_havana 
 
 
 ***app.py***
@@ -78,7 +78,7 @@ the page shows us the result of the execution of the seventh operations which is
 the page shows us the execution of the eighth operation which is the get_selected_entries() that returns all the dataset of the sources ensembl, havana, ensembl_havana
 
 */CountON:
-the page shows us the execution of the ninth operation which is the calculate_number_of_specific_entries_for_each_operation()that returns all the values of types found in each entries of the other sources
+the page shows us the execution of the ninth operation which is the calculate_number_of_specific_entries_for_each_operation() that returns all the values of types found in each entries of the other sources
 
 */Gene:
 the page shows us the execution of the tenth operation which is the get_gene_names(), that returns all the gene names found on the three sources
@@ -88,7 +88,7 @@ In order for the file to work properly we use a functions from Flask which are *
 
 ## Templates
 
-The folder contains eleven HTML files that displays the output that was cretaed through the class and its operations;every HTML files contain:
+The folder contains eleven HTML files that display the output that was created through the class and its operations;every HTML files contain:
 - Text-decoration shorthand CSS properties: set the appearance of decorative lines on text (head part)
 - Title
 - Body - contains short description of the operations found in every page, in the hompage.html it is quite different because we have a list of all the active and inactive function while for the rest of the html file the user can see the output with its corresponding description

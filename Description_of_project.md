@@ -1,6 +1,4 @@
-<div style="text-align: justify">
- 
-# Description of the Project
+ # Description of the Project
 
 To create our project, we conceptualized different ideas through the use of the CRC cards, which is important for software analysis given a problem which is how can we interpet Human Genome Annotation file (GFF3 File) into a simple dataframe that any user can easily understand. Afterwards we use UML Diagram to realize these concept of class, and transform them into solutions that is able to solve our problem
 
@@ -106,4 +104,3 @@ CRC cards are useful during software analysis because it let us conceptualize ou
 
 We use the UML diagram to design our software, and this diagram is made using the CRC cards that we created earlier. UML diagram is the realization of our problems, hence we can consider it as our solution. The UML Diagram describes how each class' relationship between them
 
- </div>

@@ -93,7 +93,7 @@ The folder contains eleven HTML files that displays the output that was cretaed 
 - **Text-decoration shorthand CSS properties**: set the appearance of decorative lines on text (head part)
 - **Title**
 - **Body** - contains short description of the operations found in every page, in the hompage.html it is quite different because we have a list of all the active and inactive function while for the rest of the html file the user can see the output with its corresponding description
-- **Button** - except for the homepage.html, all the html files have the button which is linked with the homepage, thus whenever the user wants to go back and perform other operations they can just click it and returns the user to the original page
+- **Button** - except for the homepage.html, all the html files have the button which is linked with the homepage, thus whenever the user wants to go back and perform other operations they can just click it and return to original page
 
 ### Efficiency of the program
 

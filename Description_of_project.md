@@ -14,8 +14,9 @@ It is a python file which is dependent on the use of two libraries:
 
 
 The python file contains two classes, namely:
+
 **DataSetReader**:
-- this class contains a method called getFile, which has been defined by our group, whose aim is to unzip the file and convert it into another format 
+this class contains a method called getFile, which has been defined by our group, whose aim is to unzip the file and convert it into another format 
 
 **DataSet**:
 it is a class that contains ten methods, whose behaviour is modifified by a decorator: this is also called wrapper function and it allows to change the output, without directly modifying the code. We can do this by passing a function inside another function as the argument and then making a function call inside a wrapper function. The function of decorator in our case is to define the activity of every method inside this class (active or inactive operations). That's what happens in line 37 -43
@@ -23,33 +24,33 @@ it is a class that contains ten methods, whose behaviour is modifified by a deco
 
 Here there's a list of the functions contained in the dataset class, which will provide the results based on the dataframe obtained using Pandas library
 
-•	get_basic_info() - in this function we get all the basic information characterizing GFF3, that is enclosed in nine columns, each providing different data. It returns information into a dictionary, on the program file, but it is executed as a list comprehension.
+ - get_basic_info() - in this function we get all the basic information characterizing GFF3, that is enclosed in nine columns, each providing different data. It returns information into a dictionary, on the program file, but it is executed as a list comprehension.
 
-•	get_unique_ids() - in this function it returns all the sequence IDs which is found on the dataset into a list, this alphanumeric string allows to distinguish anambigously each different feature.
+- get_unique_ids() - in this function it returns all the sequence IDs which is found on the dataset into a list, this alphanumeric string allows to distinguish anambigously each different feature.
 
-•	 get_unique_types() - it is a function that returns a list which contains all the unique types, which correspond to the different segments found an DNA strand (like exons, introns and etc) present in GFF3.
+- get_unique_types() - it is a function that returns a list which contains all the unique types, which correspond to the different segments found an DNA strand (like exons, introns and etc) present in GFF3.
 
-•	get_number_of_features() - is a function that returns a value of the total number of features contained in every source found in the dataframe 
+- get_number_of_features() - is a function that returns a value of the total number of features contained in every source found in the dataframe 
 
-•	get_number_of_entries() - returns a value of each type of operation, which represents the number that a given segment appears in the dataframe 
+- get_number_of_entries() - returns a value of each type of operation, which represents the number that a given segment appears in the dataframe 
 
-•	get_entire_chromosome_info() - returns a new dataset which contains information on the entire chromosome; this is possible considering only a precise source, that is GRCh38
+- get_entire_chromosome_info() - returns a new dataset which contains information on the entire chromosome; this is possible considering only a precise source, that is GRCh38
 
-•	calculate_fraction_of_unassembled_seq() - calculates the unassembled seq inside the GRCh38 and  this is done through the ratio of supercontigs and the whole chromosome itself then returns the value of this ratio
+- calculate_fraction_of_unassembled_seq() - calculates the unassembled seq inside the GRCh38 and  this is done through the ratio of supercontigs and the whole chromosome itself then returns the value of this ratio
 
-•	get_selected_entries() - the function returns a new dataframe from selected source ensembl, Havana, ensembl_havana; we can see it as a list 
+- get_selected_entries() - the function returns a new dataframe from selected source ensembl, Havana, ensembl_havana; we can see it as a list 
 
-•calculate_number_of_specific_entries_for_each_operation() - the function returns a dictionary which contains the exact number that each type operator appears in the dataframe (example: 'exon:1180596')
+- calculate_number_of_specific_entries_for_each_operation() - the function returns a dictionary which contains the exact number that each type operator appears in the dataframe (example: 'exon:1180596')
 
-•	get_gene_names() - it returns a list of gene names contained in selected sources, which are ensembl, havana, and ensembl_havana 
+- get_gene_names() - it returns a list of gene names contained in selected sources, which are ensembl, havana, and ensembl_havana 
 
 
 ***app.py***
 The .py file use libraries like Flask and modules like operations and Registry to function, this is possible thought the command import.
-The  file is able to open the GFF3 file using all the functions we have on the operations.py file; we also defined in this page which operation results inactive when executed.
+The  file is able to open the GFF3 file using all the functions we have on the operations.py file; we also defined in this page which operation results inactive when executed; in our case we have set the operation 'get_unique_types' to be inactive
 Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. 
 
-It will create eleven pages, each pages contain a 'back' button which brings the user on the homepage:
+the program that will be implemented will create eleven pages, each pages contain a 'back' button which brings the user on the homepage:
 
 -  /:
 the page shows the homepage of our web interface to which it gives the user a short description of the project and also shows a list of the possible active and inactive operations that is implemented on the web page; through this the user can choose any operations that are listed on the page.

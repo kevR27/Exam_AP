@@ -18,7 +18,7 @@ The project contains three ***.py*** file to which each contains certain functio
      
 2. ***Registry.py*** is a program which is able to print given function which is asked by the user; the file is linked with the *app.py*; this file is necessary for the implement web-based user interface
 
-3. ***app.py*** consists in a program whichis able to  able to open our dataset and it implements the Web-based user interface (UI). in order for it to function it needs the python modules and libraries like Flask, operations, and Registry
+3. ***app.py*** consists in a program whichis able to open our dataset and it implements the Web-based user interface (UI). in order for it to function it needs the python modules and libraries like Flask, operations, and Registry
 
 
 ## CRC Cards

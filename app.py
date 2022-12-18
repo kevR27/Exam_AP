@@ -5,7 +5,7 @@ from Registry import *
 webapp = Flask('my_webapp')
 
 #here we provide list of inactive operations
-data = DataSet(path = 'Homo_sapiens.GRCh38.85.gff3.gz', inactive = ['get_unique_types'])
+data = DataSet(path = 'Homo_sapiens.GRCh38.85.gff3.gz', inactive = ['get_unique_types','get_file'])
 reg = Registry(data)
 
 

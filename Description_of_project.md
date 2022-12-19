@@ -85,7 +85,7 @@ the page shows us the execution of the ninth operation which is the calculate_nu
 - /Gene:
 the page shows us the execution of the tenth operation which is the get_gene_names(), that returns all the gene names found in the three selected sources
 
-In order for the file to work properly we use different functions from Flask which are **render_template**, which is able to generate the template to provide to HTML, which allows us to implement our web application using python; and **request** which is a function that allows you to send HTTP requests using Python. The HTTP request aks for a Response Object with all the response data, so in our case, our object is "info" which is able to return a response base form the operations we did (found on both the Registry.py and operations.py)
+In order for the file to work properly we use different functions from Flask which are **render_template**, which is able to generate the template to provide to HTML, which allows us to implement our web application using python.
  
 
 ### Templates
